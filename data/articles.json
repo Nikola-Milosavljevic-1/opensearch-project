@@ -1,0 +1,14 @@
+[
+  {
+    "titre": "Découverte d'OpenSearch",
+    "auteur": "Niko",
+    "contenu": "OpenSearch est une alternative open source à Elasticsearch.",
+    "date": "2025-07-06"
+  },
+  {
+    "titre": "Test technique en alternance",
+    "auteur": "Nikola",
+    "contenu": "Ce projet consiste à indexer et rechercher des articles.",
+    "date": "2025-07-07"
+  }
+]

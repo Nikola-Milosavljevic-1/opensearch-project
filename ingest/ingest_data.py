@@ -3,7 +3,7 @@ import requests
 
 OPENSEARCH_URL = "http://localhost:9200"
 INDEX_NAME = "articles"
-DATA_FILE = "../data/articles.json"
+DATA_FILE = "data/articles.json"
 
 # Création de l’index si besoin
 def create_index():
