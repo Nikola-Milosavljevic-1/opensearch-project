@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "API OpenSearch",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Lister tous les articles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/articles",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["articles"]
+        }
+      }
+    },
+    {
+      "name": "Rechercher un mot-clé",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/articles?q=OpenSearch",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["articles"],
+          "query": [
+            {
+              "key": "q",
+              "value": "OpenSearch"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ajouter un article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titre\": \"Ajout via Postman\",\n  \"auteur\": \"Marylin\",\n  \"contenu\": \"Un article ajouté depuis l’outil Postman\",\n  \"date\": \"2025-07-06\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/articles",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["articles"]
+        }
+      }
+    }
+  ]
+}
